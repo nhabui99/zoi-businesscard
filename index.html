@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Huynh | Digital Business Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --zoi-dark-blue: #0A324E;
+            --zoi-turquoise: #00A4B3;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--zoi-dark-blue);
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--zoi-turquoise); /* Thin turquoise line */
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-weight: 800; /* Extra Bold */
+            text-transform: uppercase; /* Capslock */
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            margin: 0 0 30px 0;
+            line-height: 1.1;
+        }
+
+        .info-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            font-weight: 400; /* Regular */
+        }
+
+        .info-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        .info-link:hover {
+            opacity: 1;
+            color: var(--zoi-turquoise);
+        }
+
+        .footer-logo {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            opacity: 0.5;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="portrait.jpg" alt="Joseph Huynh" class="profile-img">
+
+        <h1>Joseph<br>Huynh</h1>
+
+        <div class="info-container">
+            <a href="mailto:joseph.huynh@zoi.tech" class="info-link">joseph.huynh@zoi.tech</a>
+            <a href="https://zoi.tech" target="_blank" class="info-link">zoi.tech</a>
+        </div>
+
+        <div class="footer-logo">
+            © ZOI
+        </div>
+    </div>
+
+</body>
+</html>
