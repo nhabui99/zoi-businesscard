@@ -21,6 +21,7 @@
             align-items: center;
             height: 100vh;
             color: white;
+            /* Prevents scrolling on mobile for a clean app-like feel */
             overflow: hidden; 
         }
 
@@ -32,16 +33,12 @@
         }
 
         .profile-img {
-            width: 180px;
-            height: 180px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
             object-fit: cover;
-            
-            /* The Fix: Padding creates space so the border doesn't clip the head */
-            padding: 8px; 
-            border: 2px solid var(--zoi-turquoise);
-            background-color: var(--zoi-dark-blue);
-            
+            /* Thin Turquoise Line as requested */
+            border: 2px solid var(--zoi-turquoise); 
             margin-bottom: 30px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
@@ -49,10 +46,10 @@
         h1 {
             font-weight: 800; /* Extra Bold */
             text-transform: uppercase; /* Capslock */
-            font-size: 2.2rem;
+            font-size: 2rem;
             letter-spacing: 2px;
             margin: 0 0 25px 0;
-            line-height: 1.1;
+            line-height: 1.2;
         }
 
         .info-container {
@@ -66,13 +63,14 @@
             color: white;
             text-decoration: none;
             font-size: 1rem;
-            font-weight: 400;
+            font-weight: 400; /* Regular */
             opacity: 0.9;
         }
 
+        /* The clickable turquoise button for the website */
         .website-button {
             background-color: var(--zoi-turquoise);
-            color: var(--zoi-dark-blue);
+            color: var(--zoi-dark-blue); /* Dark text for contrast on turquoise */
             text-decoration: none;
             padding: 14px 40px;
             border-radius: 50px;
@@ -80,13 +78,14 @@
             font-size: 0.9rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            transition: transform 0.2s ease;
+            transition: transform 0.2s ease, opacity 0.2s ease;
             width: 180px;
             display: inline-block;
         }
 
         .website-button:active {
             transform: scale(0.95);
+            opacity: 0.9;
         }
 
         .footer-logo {
@@ -107,6 +106,7 @@
 
         <div class="info-container">
             <a href="mailto:joseph.huynh@zoi.tech" class="email-link">joseph.huynh@zoi.tech</a>
+            
             <a href="https://zoi.tech" target="_blank" class="website-button">zoi.tech</a>
         </div>
 
